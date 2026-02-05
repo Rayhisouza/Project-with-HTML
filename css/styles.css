@@ -1,0 +1,57 @@
+.wrapper{width: 100vw; height: 100vh; background-color: rgb(200,233,10);
+    overflow-x: hidden;}
+    
+    body{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin: 0;
+        padding: 0;}
+    
+    .teamMember { grid-area: teamMember; }
+    .history { grid-area: history; }
+    .mission { grid-area: mission; }
+    .footer { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas: 
+        'history mission' 
+        'teamMember mission'
+        'footer footer'
+        ;
+      gap: 8px;
+      background-color: rgb(243, 15, 110);
+      padding:10px;
+     
+    }
+    
+    .grid-container > div {
+      background-color: rgb(180,233,145);
+      text-align: center;
+      padding: 5px 0;
+      font-size: 20px;
+      
+    }
+    
+    .header{ width: 96vw; height: 20vh;background-color: rgb(180,233,145);
+    text-align: center;margin: 15px;font-size: 25px;
+    
+    }
+    
+    nav{width: 100vw; height: 5vh;}
+    
+    a{ font-size: 20px; text-align: center; margin: 10px;}
+    
+    .nav{ display: flex;
+        justify-content: center;
+        align-items: center;}
+    
+    .nav a {font-size: 20px;text-align: center;margin: 10px;color: black;text-decoration: none;
+    padding: 20px;}
+    
+    .grid-container img {
+            width: 95vw; /* Ajusta a largura máxima da imagem para a largura do grid */
+            height: 60vh; /* Garante que a altura seja ajustada automaticamente de acordo com a largura */
+            display: block; /* Remove espaços extras abaixo da imagem */
+            margin: 0 auto; /* Centraliza a imagem no grid */
+            object-fit: cover;}
+
+            
+    

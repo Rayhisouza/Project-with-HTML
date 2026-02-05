@@ -1,0 +1,147 @@
+:root{
+    --pagebackground:rgb(200,233,10); 
+    --navigationbg:rgb(180,233,145);
+    --mainbg: rgb(205, 133, 63);
+    --whitebg:rgb(255,255,255);
+    --pinkbg: rgb(243, 15, 110);
+    --maxHeight:180vh;
+    --contentHeight:160vh;
+} 
+*{margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden;}
+.wrapper{width: 100vw; height: auto; background-color: var(--pagebackground);}
+.header{ width: 100vw; height: 20vh; background-color: var(--navigationbg);text-align: center;margin: 15px;font-size: 25px;overflow: hidden;}
+.main{width: 100vw; height: auto; background-color: var(--mainbg);}
+.left{width: 5vw; height: auto; background-color: var(--pinkbg);float: left; writing-mode: vertical-lr; /* Define o modo de escrita vertical, da direita para a esquerda */text-align: center; /* Centraliza o texto verticalmente */display: flex; align-items: center; /* Centraliza o texto horizontalmente */font-size: 200px;transform: scale(-1); /* Inverte o texto verticalmente */}
+.left2{width:60vw; height: 80vh; background-color: var(--pinkbg);float: left; text-align: center; display: flex; align-items: center; font-size: 20px;}
+.middle{ width: 80vw; height:auto;background-color: var(--mainbg); float: left;display: flex; justify-content: space-around;align-items: center; flex-wrap: wrap; padding: 30px ;margin-top: 55px; margin-left: 50px;}
+.cta-text{width: 50vw; height: 70vh; margin: 1vh auto;}
+.ct-large{width: 40vw; height: 60vh; font-size: 18px;}
+.cta-middle {flex: 1;margin: 5px;padding: 10x; border: 5px;position: relative; overflow: hidden; cursor: pointer;margin-top: 0;}
+.cta-middle img {max-width: 100%;height: auto;display: block;margin: 0 auto; border-radius: 100px;}
+.cta-middle h2{ font-size: 01em;text-align: center; margin-bottom: 10px;}
+.right{width: 5vw; height: auto; background-color: var(--pinkbg); float: right; writing-mode: vertical-lr; /* Define o modo de escrita vertical, da direita para a esquerda */text-align: center; /* Centraliza o texto verticalmente */display: flex; align-items: center; /* Centraliza o texto horizontalmente */font-size: 200px;}
+.right2{width: 35vw; height: var(--contentHeight); background-color: var(--whitebg); float: right; text-align: center; /* Centraliza o texto verticalmente */display: flex; align-items: center; /* Centraliza o texto horizontalmente */font-size: 20px;}
+.cta-main{ width: 25vw;height: 60vh; background-color: var(--whitebg); margin: 5vh auto;}
+.cta-right{width: 45vw;min-height: 40vh;background-color: var(--whitebg);margin: 60vh auto auto auto;}
+.spacer{width: 100%; padding: 25px;}
+
+h3{font-size: 18px; text-align: center; margin: 30px; font-weight: lighter; }
+nav{width: 100vw; height: 5vh;}
+a{ font-size: 20px; text-align: center; margin: 10px;}
+.nav{ display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.nav a {font-size: 20px;text-align: center;margin: 10px;color: black;text-decoration: none; /* Remover sublinhado padrão */
+    padding: 20px; /* Adicionar espaço interno */}
+
+.hidden-text { /* função para colocar um texto escondido na imagem e ao clicar o usuário consegue ter acesso as informações escondidas*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo semi-transparente */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    transition: transform 0.5s;
+    opacity: 0; /* Inicialmente invisível */}
+
+.cta-middle:hover .hidden-text {
+    transform: rotateY(0);
+    opacity: 1;}
+
+.grid {flex: 1;margin: 10px;padding: 5px;border: 5px;text-align: center;} 
+    
+.grid img {
+        width: 95vw; /* Ajusta a largura máxima da imagem para a largura do grid */
+        height: 60vh; /* Garante que a altura seja ajustada automaticamente de acordo com a largura */
+        display: block; /* Remove espaços extras abaixo da imagem */
+        margin: 0 auto; /* Centraliza a imagem no grid */
+       
+        object-fit: cover;}
+
+.grid-overlay-text {
+position:absolute;
+top: 50%; /* Ajustar conforme necessário para posicionar verticalmente */
+left: 35%; /* Ajustar conforme necessário para posicionar horizontalmente */
+transform: translate(-50%, -50%);
+color: black; /* Cor do texto */
+font-size: 5em; /* Tamanho do texto */
+font-weight: bold; 
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide em três partes iguais */
+    height: 20vh; 
+    text-align: center;}
+
+.grid-item{ font-size: 20px; position: relative; text-align: center;}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 5px; 
+    height: 40vh; 
+    position: relative;
+    text-align: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+
+.grid-container2 img {
+    width: 70%; /* Ajusta a largura máxima da imagem para a largura do grid */
+    height: 30vh; /* Garante que a altura seja ajustada automaticamente de acordo com a largura */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: auto;
+    object-fit: cover;
+    border-radius: 25px;
+    
+}
+
+.grid-container2 p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    margin: auto;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.additional-section {
+    width: 60vw;
+    height: 70vh;
+    background-color: var(--pinkbg);
+    text-align: center;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 10px; /* ou outro valor conforme necessário */
+}
+
+.additional-section h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+form {max-width: 400px;margin: 0 auto;}
+  label {display: block;margin-bottom: 8px;}
+  input, textarea {width: 100%;padding: 8px;margin-bottom: 16px;box-sizing: border-box;}
+  button {background-color: #0d0e0d;color: white;padding: 10px 15px;border: none;border-radius: 4px;cursor: pointer;}
+  button:hover {background-color: #45a049;
+  }
+  .center{text-align: center;}
+
+
+
+
+
+footer{width: 100vw; height: 5vh; background-color: var(--navigationbg);position: relative; text-align: center;}
+

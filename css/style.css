@@ -1,0 +1,87 @@
+*{margin: 0; padding: 0; overflow-x: hidden;}
+
+.wrapper{width: 100vw; height: 100vh; background-color: rgb(200,233,10);
+    overflow-x: hidden;}
+    
+    body{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    
+    .item1 { grid-area: Image; }
+    .item2 { grid-area: Favorites; }
+    .item3 { grid-area: txt; }
+    .item4 { grid-area: Where; }
+    .item5 { grid-area: Instagram; }
+    .item6 { grid-area: Goal; }
+    .item7 { grid-area: Delivery; }
+    .item8 { grid-area: Franchise; }
+    .item9 { grid-area: Restaurant; }
+    .item10 { grid-area: Image2; }
+    .item11 { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'Image Image Image Image Image Image'
+        'Favorites txt txt txt txt txt'
+        'Favorites Where Where Instagram Goal Goal'
+        'Favorites footer footer footer footer footer'
+        ;
+      gap: 5px;
+      padding: 5px;
+    }
+    
+    .grid-container > div {
+      background-color: rgb(205, 133, 63);
+      text-align: center;
+      padding: 10px 0;
+      font-size: 30px;
+    
+    }
+    
+    
+    .grid-container img {
+    width: 100vw; /* Ajusta a largura máxima da imagem para a largura do grid */
+    height: 60vh; /* Garante que a altura seja ajustada automaticamente de acordo com a largura */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem no grid */
+    object-fit: cover;}
+    
+    
+    
+    .header{ width: 100vw; height: 20vh;background-color: rgb(180,233,145);
+    text-align: center;margin: 15px;font-size: 25px;
+    
+    }
+    
+    nav{width: 100vw; height: 5vh;}
+    
+    a{ font-size: 20px; text-align: center; margin: 10px; text-decoration: none;}
+    
+    .nav{ display: flex;
+        justify-content: center;
+        align-items: center;}
+    
+    .nav a {font-size: 20px;text-align: center;margin: 10px;color: black;text-decoration: none;
+    padding: 20px;}
+    
+    
+    
+    h1{color: hsla(0, 0%, 10%, 0.4); background-clip: text; background-repeat: no-repeat; background-image: linear-gradient(135deg,rgb(147, 172, 8),rgb(243, 15, 110));}
+    h2{color: white; font-size: 30px; font-weight: lighter;}
+    h3{color: white; font-size: 50px; font-weight: lighter;}
+    p{font-size: 15px;}
+    h4{font-size: 20px;}
+
+    
+
+    .wrapper .grid-container .item2 button{padding: 60px 40px; font-size: 30px; border-radius: 50px; border: 0; background-color: rgb(200,233,10); cursor:pointer;}
+
+    .grid-container .item2 :hover{background-repeat: no-repeat;background-image: linear-gradient(135deg,rgb(243, 15, 110),rgb(147, 172, 8));}
+
+    .item3 button{padding: 60px 40px; font-size: 30px; border-radius: 50px; border: 0; background-color: rgb(200,233,10); cursor: pointer;}
+
+    .item3 :hover{background-repeat: no-repeat;background-image: linear-gradient(135deg,rgb(243, 15, 110),rgb(147, 172, 8));}
+
+
+    /*.test:hover{color: hsla(0, 0%, 10%, 0.4); background-clip: text; background-repeat: no-repeat; background-image: linear-gradient(135deg,rgb(243, 15, 110),rgb(147, 172, 8));} */
+    
+    
